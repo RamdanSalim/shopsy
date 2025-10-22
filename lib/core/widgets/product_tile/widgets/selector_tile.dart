@@ -20,7 +20,7 @@ class SelectorTile extends StatelessWidget {
       children: [
         SelectorButton(
           onClicked: () {
-            add();
+            remove();
           },
           iconData: count > 1 ? CupertinoIcons.minus : CupertinoIcons.trash,
         ),
@@ -37,7 +37,7 @@ class SelectorTile extends StatelessWidget {
         SelectorButton(
           iconData: CupertinoIcons.add,
           onClicked: () {
-            remove();
+            add();
           },
         ),
       ],

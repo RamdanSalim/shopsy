@@ -1,8 +1,16 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shopsy/core/constants/color_const.dart';
+import 'package:shopsy/core/di.dart';
+import 'package:shopsy/core/widgets/common_button.dart';
+import 'package:shopsy/core/widgets/product_tile/widgets/selector_tile.dart';
 import 'package:shopsy/data/model/product_model.dart';
+
+import '../../../presentation/cart_screen/cart_cubit/cart_cubit.dart';
 
 class ProductTile extends StatelessWidget {
   final Function() addToCart;
@@ -35,7 +43,7 @@ class ProductTile extends StatelessWidget {
           children: [
             Container(
               constraints: BoxConstraints(
-                maxHeight: 100.h,
+                maxHeight: 130.h,
                 maxWidth: 120.w,
                 minHeight: 80.h,
                 minWidth: 100.w,
@@ -60,6 +68,13 @@ class ProductTile extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(
+                  child: Text(
+                    productModel.name!,
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                SizedBox(height: 5.h),
                 SizedBox(
                   width: 210.w,
                   child: Text(
@@ -94,28 +109,47 @@ class ProductTile extends StatelessWidget {
                     ],
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {
-                    addToCart();
+
+                BlocSelector<CartCubit, CartState, int>(
+                  bloc: cartCubit,
+                  selector: (state) {
+                    final cartItem = state.cartItems.firstWhere(
+                      (item) => item.id == productModel.id,
+                      orElse: () => productModel.copyWith(stock: 0),
+                    );
+                    return cartItem.stock ?? 0;
                   },
-                  child: Container(
-                    height: 40.h,
-                    width: 210.w,
-                    decoration: BoxDecoration(
-                      color: ColorConst.secondary,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'ADD TO CART',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: ColorConst.white,
+                  builder: (context, quantity) {
+                    if (quantity > 0) {
+                      return SelectorTile(
+                        count: quantity,
+                        add: () => cartCubit.changeQuantity(
+                          productModel.id!,
+                          increment: true,
                         ),
-                      ),
-                    ),
-                  ),
+                        remove: () => cartCubit.changeQuantity(
+                          productModel.id!,
+                          increment: false,
+                        ),
+                      );
+                    } else {
+                      return CommonButton(
+                        onTap: () {
+                          log('Add to cart tapped');
+                          cartCubit.addToCart(productModel);
+                        },
+                        title: 'ADD TO CART',
+                      );
+                    }
+                  },
                 ),
+                // CommonButton(
+                //   onTap: () {
+                //     log('addToCart');
+                //     addToCart();
+                //   },
+                //   title: 'ADD TO CART',
+                // ),
               ],
             ),
           ],

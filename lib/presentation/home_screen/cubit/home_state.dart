@@ -17,7 +17,9 @@ final class HomeLoadingState extends HomeState {
 
 final class HomeProductLoadedST extends HomeState {
   final List<ProductModel> products;
-  const HomeProductLoadedST({required this.products});
+  final bool hasMore;
+
+  const HomeProductLoadedST({required this.products, required this.hasMore});
   @override
   List<Object> get props => [products];
 }
