@@ -4,7 +4,6 @@
     "name":"Running Shoes",
     "category":"Footwear",
     "price":1200,
-    "image":"https://placehold.co/150x150?text=Running+Shoes",
     "description":"Lightweight running shoes for daily workouts and jogging.",
     "stock":25,
     "rating":4.5
@@ -14,7 +13,6 @@
     "name":"T-Shirt",
     "category":"Clothing",
     "price":599,
-    "image":"https://placehold.co/150x150?text=T-Shirt",
     "description":"Comfortable cotton t-shirt available in multiple colors.",
     "stock":50,
     "rating":4.2
@@ -24,7 +22,6 @@
     "name":"Jeans",
     "category":"Clothing",
     "price":1499,
-    "image":"https://placehold.co/150x150?text=Jeans",
     "description":"Slim fit jeans made from high-quality denim material.",
     "stock":30,
     "rating":4.3
@@ -34,7 +31,6 @@
     "name":"Wrist Watch",
     "category":"Accessories",
     "price":2999,
-    "image":"https://placehold.co/150x150?text=Wrist+Watch",
     "description":"Elegant wrist watch with leather strap and quartz movement.",
     "stock":15,
     "rating":4.6
@@ -44,7 +40,6 @@
     "name":"Backpack",
     "category":"Bags",
     "price":999,
-    "image":"https://placehold.co/150x150?text=Backpack",
     "description":"Durable backpack suitable for travel and school.",
     "stock":40,
     "rating":4.4
@@ -54,7 +49,6 @@
     "name":"Sunglasses",
     "category":"Accessories",
     "price":799,
-    "image":"https://placehold.co/150x150?text=Sunglasses",
     "description":"UV-protected stylish sunglasses for everyday wear.",
     "stock":35,
     "rating":4.1
@@ -64,7 +58,6 @@
     "name":"Bluetooth Speaker",
     "category":"Electronics",
     "price":1599,
-    "image":"https://placehold.co/150x150?text=Bluetooth+Speaker",
     "description":"Portable Bluetooth speaker with excellent sound quality.",
     "stock":20,
     "rating":4.5
@@ -74,7 +67,6 @@
     "name":"Headphones",
     "category":"Electronics",
     "price":1299,
-    "image":"https://placehold.co/150x150?text=Headphones",
     "description":"Over-ear headphones with noise cancellation feature.",
     "stock":18,
     "rating":4.6
@@ -84,7 +76,6 @@
     "name":"Smartphone Case",
     "category":"Accessories",
     "price":499,
-    "image":"https://placehold.co/150x150?text=Smartphone+Case",
     "description":"Durable smartphone case to protect your device from scratches.",
     "stock":45,
     "rating":4.3
@@ -94,7 +85,6 @@
     "name":"Water Bottle",
     "category":"Lifestyle",
     "price":299,
-    "image":"https://placehold.co/150x150?text=Water+Bottle",
     "description":"Leak-proof water bottle made from BPA-free material.",
     "stock":60,
     "rating":4.2
@@ -104,7 +94,6 @@
     "name":"Laptop Sleeve",
     "category":"Bags",
     "price":799,
-    "image":"https://placehold.co/150x150?text=Laptop+Sleeve",
     "description":"Protective laptop sleeve with soft inner lining.",
     "stock":25,
     "rating":4.4
@@ -114,7 +103,6 @@
     "name":"Mouse",
     "category":"Electronics",
     "price":699,
-    "image":"https://placehold.co/150x150?text=Mouse",
     "description":"Wireless mouse with ergonomic design and long battery life.",
     "stock":40,
     "rating":4.5
@@ -124,7 +112,6 @@
     "name":"Keyboard",
     "category":"Electronics",
     "price":999,
-    "image":"https://placehold.co/150x150?text=Keyboard",
     "description":"Mechanical keyboard with responsive keys and RGB lighting.",
     "stock":35,
     "rating":4.6
@@ -134,7 +121,6 @@
     "name":"Notebook",
     "category":"Stationery",
     "price":149,
-    "image":"https://placehold.co/150x150?text=Notebook",
     "description":"Notebook with 200 pages for notes and sketches.",
     "stock":70,
     "rating":4.1
@@ -144,7 +130,6 @@
     "name":"Pen Set",
     "category":"Stationery",
     "price":249,
-    "image":"https://placehold.co/150x150?text=Pen+Set",
     "description":"Set of 5 smooth ink pens for writing and drawing.",
     "stock":50,
     "rating":4.3
@@ -154,7 +139,6 @@
     "name":"Sneakers",
     "category":"Footwear",
     "price":1999,
-    "image":"https://placehold.co/150x150?text=Sneakers",
     "description":"Casual sneakers suitable for sports and daily wear.",
     "stock":30,
     "rating":4.5
@@ -164,7 +148,6 @@
     "name":"Formal Shoes",
     "category":"Footwear",
     "price":2499,
-    "image":"https://placehold.co/150x150?text=Formal+Shoes",
     "description":"Elegant formal shoes for office and events.",
     "stock":20,
     "rating":4.6
@@ -174,7 +157,6 @@
     "name":"Jacket",
     "category":"Clothing",
     "price":2799,
-    "image":"https://placehold.co/150x150?text=Jacket",
     "description":"Warm jacket made from high-quality material.",
     "stock":22,
     "rating":4.4
@@ -184,7 +166,6 @@
     "name":"Cap",
     "category":"Accessories",
     "price":349,
-    "image":"https://placehold.co/150x150?text=Cap",
     "description":"Stylish baseball cap for outdoor activities.",
     "stock":40,
     "rating":4.2
@@ -194,7 +175,6 @@
     "name":"Scarf",
     "category":"Accessories",
     "price":499,
-    "image":"https://placehold.co/150x150?text=Scarf",
     "description":"Soft scarf to keep warm during winter.",
     "stock":35,
     "rating":4.3
@@ -204,7 +184,6 @@
     "name":"Power Bank",
     "category":"Electronics",
     "price":1499,
-    "image":"https://placehold.co/150x150?text=Power+Bank",
     "description":"High-capacity power bank for charging devices on the go.",
     "stock":25,
     "rating":4.5
@@ -214,7 +193,6 @@
     "name":"Charger",
     "category":"Electronics",
     "price":799,
-    "image":"https://placehold.co/150x150?text=Charger",
     "description":"Fast charging adapter compatible with multiple devices.",
     "stock":50,
     "rating":4.4
@@ -224,7 +202,6 @@
     "name":"Earbuds",
     "category":"Electronics",
     "price":1999,
-    "image":"https://placehold.co/150x150?text=Earbuds",
     "description":"Wireless earbuds with clear sound and long battery life.",
     "stock":20,
     "rating":4.6
@@ -234,7 +211,6 @@
     "name":"Smartwatch",
     "category":"Electronics",
     "price":4999,
-    "image":"https://placehold.co/150x150?text=Smartwatch",
     "description":"Smartwatch with fitness tracking and notifications.",
     "stock":18,
     "rating":4.7
@@ -244,7 +220,6 @@
     "name":"Socks Pack",
     "category":"Clothing",
     "price":299,
-    "image":"https://placehold.co/150x150?text=Socks+Pack",
     "description":"Pack of 5 comfortable socks for everyday use.",
     "stock":60,
     "rating":4.1
@@ -254,7 +229,6 @@
     "name":"Belt",
     "category":"Accessories",
     "price":699,
-    "image":"https://placehold.co/150x150?text=Belt",
     "description":"Leather belt suitable for formal and casual wear.",
     "stock":30,
     "rating":4.3
@@ -264,7 +238,6 @@
     "name":"Wallet",
     "category":"Accessories",
     "price":899,
-    "image":"https://placehold.co/150x150?text=Wallet",
     "description":"Leather wallet with multiple compartments.",
     "stock":25,
     "rating":4.4
@@ -274,7 +247,6 @@
     "name":"Umbrella",
     "category":"Lifestyle",
     "price":499,
-    "image":"https://placehold.co/150x150?text=Umbrella",
     "description":"Compact umbrella for rainy weather protection.",
     "stock":40,
     "rating":4.2
@@ -284,7 +256,6 @@
     "name":"Gloves",
     "category":"Accessories",
     "price":399,
-    "image":"https://placehold.co/150x150?text=Gloves",
     "description":"Warm gloves for winter and outdoor activities.",
     "stock":35,
     "rating":4.3
@@ -294,7 +265,6 @@
     "name":"Perfume",
     "category":"Lifestyle",
     "price":1599,
-    "image":"https://placehold.co/150x150?text=Perfume",
     "description":"Long-lasting perfume with a refreshing fragrance.",
     "stock":20,
     "rating":4.5
