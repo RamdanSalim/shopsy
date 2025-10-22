@@ -43,7 +43,7 @@ class ProductTile extends StatelessWidget {
           children: [
             Container(
               constraints: BoxConstraints(
-                maxHeight: 130.h,
+                maxHeight: 155.h,
                 maxWidth: 120.w,
                 minHeight: 80.h,
                 minWidth: 100.w,
@@ -80,6 +80,15 @@ class ProductTile extends StatelessWidget {
                   child: Text(
                     productModel.description!,
                     style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                SizedBox(height: 5.h),
+                Text(
+                  "₹${productModel.price}",
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.bold,
+                    color: ColorConst.secondary,
                   ),
                 ),
                 Padding(
