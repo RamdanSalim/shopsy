@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Future.delayed(const Duration(seconds: 3), () {
       if (!mounted) return;
-      context.go(StringConst.home);
+      context.push(StringConst.home);
     });
   }
 

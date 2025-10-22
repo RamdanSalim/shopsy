@@ -45,7 +45,7 @@ class CartScreen extends StatelessWidget {
                       final product = state.cartItems[index];
                       return GestureDetector(
                         onTap: () {
-                          context.go(StringConst.product, extra: product.id);
+                          context.push(StringConst.product, extra: product.id);
                         },
                         child: Container(
                           padding: EdgeInsets.all(12.w),

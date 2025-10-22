@@ -36,7 +36,7 @@ class ProductDetailPage extends StatelessWidget {
                 children: [
                   CommonAppBar(
                     onTap: () {
-                      context.go(StringConst.cart);
+                      context.push(StringConst.cart);
                     },
                     height: 80,
                     title: 'Shopsy',

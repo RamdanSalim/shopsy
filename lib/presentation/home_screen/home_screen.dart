@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 CommonAppBar(
                   onTap: () {
-                    context.go(StringConst.cart);
+                    context.push(StringConst.cart);
                   },
                   height: 80,
                   title: 'Shopsy',
@@ -58,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                               itemBuilder: (context, index) {
                                 return GestureDetector(
                                   onTap: () {
-                                    context.go(
+                                    context.push(
                                       StringConst.product,
                                       extra: products[index].id,
                                     );

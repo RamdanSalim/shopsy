@@ -45,11 +45,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ? IconButton(
                     color: ColorConst.primary,
                     onPressed: () {
-                      if (GoRouter.of(context).canPop()) {
-                        context.pop();
-                      } else {
-                        context.go(StringConst.home); // fallback to home
-                      }
+                      context.pop();
                     },
                     icon: Icon(CupertinoIcons.arrow_left),
                   )
