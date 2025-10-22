@@ -21,10 +21,10 @@ class SelectorButton extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: ColorConst.secondary,
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(12),
         ),
         constraints: BoxConstraints(
-          maxWidth: 50.w,
+          maxWidth: 80.w,
           maxHeight: 40.h,
           minHeight: 25.h,
           minWidth: 50.w,

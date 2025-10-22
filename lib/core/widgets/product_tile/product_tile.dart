@@ -135,7 +135,6 @@ class ProductTile extends StatelessWidget {
                     } else {
                       return CommonButton(
                         onTap: () {
-                          log('Add to cart tapped');
                           cartCubit.addToCart(productModel);
                         },
                         title: 'ADD TO CART',
@@ -143,13 +142,6 @@ class ProductTile extends StatelessWidget {
                     }
                   },
                 ),
-                // CommonButton(
-                //   onTap: () {
-                //     log('addToCart');
-                //     addToCart();
-                //   },
-                //   title: 'ADD TO CART',
-                // ),
               ],
             ),
           ],
