@@ -13,3 +13,4 @@ void setupDI() {
 }
 
 CartCubit get cartCubit => GetIt.I<CartCubit>();
+ProductRepo get prodRepo => GetIt.I<ProductRepo>();

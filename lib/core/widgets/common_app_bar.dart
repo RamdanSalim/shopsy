@@ -39,9 +39,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10.w),
         child: Row(
-          mainAxisAlignment: iconData != null
-              ? MainAxisAlignment.spaceBetween
-              : MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             !isHome
                 ? IconButton(

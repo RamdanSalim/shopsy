@@ -25,7 +25,7 @@ class SelectorButton extends StatelessWidget {
         ),
         constraints: BoxConstraints(
           maxWidth: 50.w,
-          maxHeight: 25.h,
+          maxHeight: 40.h,
           minHeight: 25.h,
           minWidth: 50.w,
         ),

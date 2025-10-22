@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                                   onTap: () {
                                     context.go(
                                       StringConst.product,
-                                      extra: products[index],
+                                      extra: products[index].id,
                                     );
                                   },
                                   child: ProductTile(

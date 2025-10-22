@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shopsy/core/constants/color_const.dart';
+import 'package:shopsy/core/widgets/common_app_bar.dart';
 import 'package:shopsy/core/widgets/common_button.dart';
 import 'package:shopsy/core/widgets/product_tile/widgets/selector_tile.dart';
 
@@ -19,10 +20,19 @@ class CartScreen extends StatelessWidget {
         bloc: cartCubit,
         builder: (context, state) {
           if (state.cartItems.isEmpty) {
-            return const Center(child: Text("Your cart is empty"));
+            return Column(
+              children: [
+                CommonAppBar(height: 60, title: "Your Cart", isHome: false),
+                const Expanded(
+                  child: Center(child: Text("Your cart is empty")),
+                ),
+              ],
+            );
           }
+
           return Column(
             children: [
+              CommonAppBar(height: 60, title: "Your Cart", isHome: false),
               Expanded(
                 child: ListView.separated(
                   padding: EdgeInsets.all(10.w),
@@ -63,18 +73,14 @@ class CartScreen extends StatelessWidget {
 
                           SelectorTile(
                             count: product.stock!,
-                            add: () {
-                              cartCubit.changeQuantity(
-                                product.id!,
-                                increment: true,
-                              );
-                            },
-                            remove: () {
-                              cartCubit.changeQuantity(
-                                product.id!,
-                                increment: false,
-                              );
-                            },
+                            add: () => cartCubit.changeQuantity(
+                              product.id!,
+                              increment: true,
+                            ),
+                            remove: () => cartCubit.changeQuantity(
+                              product.id!,
+                              increment: false,
+                            ),
                           ),
 
                           product.stock! >= 2
@@ -86,13 +92,15 @@ class CartScreen extends StatelessWidget {
                                   onPressed: () =>
                                       cartCubit.removeFromCart(product.id!),
                                 )
-                              : SizedBox(),
+                              : const SizedBox(),
                         ],
                       ),
                     );
                   },
                 ),
               ),
+
+              // Total & Checkout
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 15.h),
                 decoration: BoxDecoration(

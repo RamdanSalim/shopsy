@@ -28,11 +28,16 @@ class SelectorTile extends StatelessWidget {
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
           constraints: BoxConstraints(
             maxWidth: 50.w,
-            maxHeight: 25.h,
+            maxHeight: 40.h,
             minHeight: 25.h,
             minWidth: 50.w,
           ),
-          child: Center(child: Text(count.toString())),
+          child: Center(
+            child: Text(
+              count.toString(),
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
         ),
         SelectorButton(
           iconData: CupertinoIcons.add,
